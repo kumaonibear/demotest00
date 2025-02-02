@@ -1,0 +1,34 @@
+{% extends 'base_template.html' %}
+
+{% block title %}
+    <title>Animal List</title>
+{% endblock %}
+
+{% block content %}
+    <h2 class="text-center">Animal List</h2>
+
+    <table class="table table -striped table-hover">
+        <thead>
+            <tr>
+                <th>Animal Code</th>
+                <th>Base name</th>
+                <th>Scien name</th>
+                <th>Amount</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for animal in animals%}
+            <tr>
+                <tb>({animal.id})</tb>
+                <tb>({base_name})</tb>
+                <tb>({scien_name})</tb>
+                <tb>({animal_number})</tb>
+                <tb>#</tb>
+                <tb>#</tb>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
